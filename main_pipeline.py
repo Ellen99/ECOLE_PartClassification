@@ -3,6 +3,8 @@ from config import DEFAULT_DINO_MODEL
 from data_processing import load_and_preprocess_images, load_concept_hierarchy, load_part_classifiers
 from classification import classify_parts
 from visualization import visualize_masks_on_image
+from elliptic_visualization import visualize_ellipses, get_part_components
+from PIL import Image
 
 def build_dino(model_name: str = DEFAULT_DINO_MODEL):
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -33,16 +35,24 @@ def main():
 
     part_classifiers_l2 = load_part_classifiers(all_root_concepts, penalty='l2')    
     print(f"Loaded {len(part_classifiers_l2)} part classifiers with l2 penalty")
-    
-    thresh = 0.95
+
+    thresh = 0.997
     for img_name, image_data in images_data.items():
+
         root_concept = image_data["concept"]
         image_path = image_data["image_path"]
+        
         concept_parts = concept_hierarchy[root_concept]
 
         predicted_masks_l2 = classify_parts(image_data, concept_parts, part_classifiers_l2, probability_threshold=thresh, upsample=True)
         path_to_save = f"output/masks_{root_concept}-{img_name}.png"
-        visualize_masks_on_image(image_path, predicted_masks_l2, f"generated masks for {root_concept}", only_save=False, save_path=path_to_save)
+        path_to_save_e = f"elliptic_outputs/masks_{root_concept}-{img_name}.png"
+        
+        image = Image.open(image_path).convert("RGB")
+        part_components = get_part_components(predicted_masks_l2, image.size)
+        visualize_ellipses(image, part_components, save_path=path_to_save_e, only_save=True)
+
+        visualize_masks_on_image(image_path, predicted_masks_l2, f"generated masks for {root_concept}", only_save=True, save_path=path_to_save)
 
 if __name__ == "__main__":
     main()
