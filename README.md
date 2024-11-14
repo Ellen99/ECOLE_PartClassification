@@ -1,6 +1,7 @@
 # Part Classifier
 
-A deep learning project for training part classifiers using DINO features and hierarchical concept learning.
+A hierarchical part classification system using DINOv2 features for semantic part segmentation.
+
 <!-- 
 ## 📋 Table of Contents
 - [Overview](#overview)
