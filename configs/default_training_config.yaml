@@ -1,0 +1,18 @@
+dino_model: "dinov2_vitl14"
+penalty: "l1"
+iterations: 2000
+solver: "saga"
+
+patch_size: 14
+feat_dim: 1024
+image_height: 224
+image_width: 224
+
+max_workers: 6
+
+verbose: False
+
+checkpoint_dir: "checkpoints_vitl14/"  # Change checkpoint directory
+mask_dir: '/shared/nas/data/m1/elenc2/PartClassifiers_training/annotations/masks/'
+feat_dir: /shared/nas/data/m1/elenc2/PartClassifiers_training/dino_features-dinov2_vitl14/
+#  "dino_features-dinov2_vitl14/"

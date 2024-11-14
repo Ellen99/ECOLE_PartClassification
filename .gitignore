@@ -1,2 +1,6 @@
 /__pycache__
 /checkpoints
+checkpoints_vits14/*
+*.pyc
+*.pkl
+zipp.ipynb

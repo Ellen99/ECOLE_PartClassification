@@ -1,0 +1,18 @@
+dino_model: "dinov2_vitl14"
+
+patch_size: 14
+feat_dim: 1024
+image_height: 224
+image_width: 224
+
+input_dir: 'data/test_images/'
+output_dir: 'output/'
+threshold: 0.95
+
+return_binary_mask: True
+return_upsampled_mask: True
+only_save_visualization: False
+visualization_option: 'ellipse' # 'ellipse' or 'patch'
+
+checkpoint_dir: "checkpoints_vitl14/"  # Change checkpoint directory
+# feat_dir: 'dino_features-dinov2_vitl14/'
