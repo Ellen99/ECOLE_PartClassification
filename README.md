@@ -1,7 +1,7 @@
 # Part Classifier
 
 A deep learning project for training part classifiers using DINO features and hierarchical concept learning.
-
+<!-- 
 ## 📋 Table of Contents
 - [Overview](#overview)
 - [Features](#features)
@@ -11,7 +11,7 @@ A deep learning project for training part classifiers using DINO features and hi
 - [Configuration](#configuration)
 - [Training Pipeline](#training-pipeline)
 - [Technical Details](#-technical-details)
-- [Results](#results)
+- [Results](#results) -->
 
 ## 🔍 Overview
 
@@ -26,7 +26,7 @@ This project implements a part classification system using DINOv2 (self-DIstilla
 - Configurable training parameters
 - Result visualization with both patch mask and elliptical mask overlays
 - Support for both CPU and GPU processing
-
+<!-- 
 ## 📁 Repository Structure
 
 ```
@@ -48,7 +48,7 @@ SOON
 3. Install dependencies:
 ```bash
 pip install -r requirements.txt
-```
+``` -->
 
 ## 💻 Usage
 
@@ -72,7 +72,7 @@ python scripts/predict.py --config configs/default_pred_config.yaml
 
 ## ⚙️ Configuration
 
-Configuration is managed through the `TrainingConfig` and `InferenceConfig` classes
+Configuration is managed through the [`TrainingConfig`](https://github.com/Ellen99/ECOLE_PartClassification/blob/8d7a889b42a39c22a0b65a7f56b625e667e29c35/src/utils/config.py#L41) and [`InferenceConfig`](https://github.com/Ellen99/ECOLE_PartClassification/blob/8d7a889b42a39c22a0b65a7f56b625e667e29c35/src/utils/config.py#L41) classes
 
 
 ## 🔧 Technical Details for Prediction
@@ -83,14 +83,11 @@ Configuration is managed through the `TrainingConfig` and `InferenceConfig` clas
 
 ## 📊 Results
 
-![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_airplanes--agricultural-airplanes--agricultural-1.png.png)
-![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_airplanes--agricultural-airplanes--agricultural-2.jpg.png)
-![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_airplanes--agricultural-airplanes--agricultural-3.jpg.png)
-![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_airplanes--agricultural-airplanes--agricultural-4.jpg.png)
-![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_airplanes--attack-airplanes--attack-1.jpg.png)
-![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_airplanes--attack-airplanes--attack-2.jpg.png)
-![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_kitchen--air%20fryer-kitchen--air%20fryer-1.jpg.png)
-![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_kitchen--pizza%20cutter-kitchen--pizza%20cutter-1.jpg.png)
-![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_vehicles--hatch%20back-vehicles--hatch%20back-1.jpg.png)
-
-
+![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_airplanes--attack-1.jpg)
+![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_vehicles--suv-1.jpg)
+![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_kitchen--espresso%20machine-2.jpg)
+![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_airplanes--agricultural-3.jpg)
+![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_airplanes--agricultural-4.jpg)
+![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_vehicles--suv-2.jpg)
+![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_airplanes--private-10.JPG)
+![example output](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/output/masks_airplanes--private-2.png)
