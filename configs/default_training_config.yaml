@@ -1,6 +1,6 @@
 dino_model: "dinov2_vitl14"
 penalty: "l1"
-iterations: 2000
+iterations: 1000
 solver: "saga"
 
 patch_size: 14
@@ -12,7 +12,7 @@ max_workers: 6
 
 verbose: False
 
-checkpoint_dir: "checkpoints_vitl14/"  # Change checkpoint directory
-mask_dir: '/shared/nas/data/m1/elenc2/PartClassifiers_training/annotations/masks/'
+checkpoint_dir: /shared/nas/data/m1/elenc2/PartClassifiers/checkpoints_vitl14_last/  # Change checkpoint directory
+mask_dir: /shared/nas2/blume5/fa24/concept_downloading/data/image_annotations/24-11-18/annotations/merged_annotations/masks/
 feat_dir: /shared/nas/data/m1/elenc2/PartClassifiers_training/dino_features-dinov2_vitl14/
 #  "dino_features-dinov2_vitl14/"

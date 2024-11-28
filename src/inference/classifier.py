@@ -29,7 +29,7 @@ class PartClassifier:
 
     # def classify_parts(self, image_data, concept_parts, part_classifiers, probability_threshold=0.5, upsample=True):
 
-    def classify_parts(self, image_data, concept_parts):
+    def classify_parts(self, image_data, concept_parts, thresh=None):
         '''
         Classify image patches based on the given part classifiers.
         
@@ -42,6 +42,8 @@ class PartClassifier:
                     }
             concept_parts (list): List of part names for the concept.
         '''
+        if thresh:
+            self.threshold = thresh
         concept_name = image_data["concept"]
         image_features = image_data["features"]
         aggregated_part_features = {part: [] for part in concept_parts}

@@ -122,7 +122,8 @@ class PartClassifierTrainer:
                 self.config.checkpoint_dir,
                 f'part_classifiers_{self.config.penalty}/{concept_name}_classifiers.pkl'
             )
-
+            base_folder = os.path.dirname(checkpoint_path)
+            os.makedirs(base_folder, exist_ok=True)
             # Load existing classifiers if available
             if os.path.exists(checkpoint_path):
                 concept_classifiers[concept_name] = joblib.load(checkpoint_path)

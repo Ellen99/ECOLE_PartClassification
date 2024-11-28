@@ -4,3 +4,6 @@ checkpoints_vits14/*
 *.pyc
 *.pkl
 zipp.ipynb
+secret.py
+/data/new_concept_images
+Concept_hierarchy-Nov_20.csv

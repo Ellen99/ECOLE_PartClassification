@@ -19,7 +19,7 @@ class BaseConfig:
     # TODO move checkpoints to Hugging Face hub
     checkpoint_dir: str = 'checkpoints_vitl14/'
 
-    feat_dir: str = '/shared/nas/data/m1/elenc2/PartClassifiers_training/dino_features-dinov2_vitl14/'
+    feat_dir: str = '/shared/nas/data/m1/elenc2/PartClassifiers/dino_features-dinov2_vitl14/'
 
     dh: int = 0
     dw: int = 0
@@ -43,7 +43,8 @@ class TrainingConfig(BaseConfig):
 
     iterations: int = 2000
     solver: str = 'saga'
-    mask_dir: str = '/shared/nas/data/m1/elenc2/PartClassifiers_training/annotations/masks/'
+    # mask_dir: str = '/shared/nas/data/m1/elenc2/PartClassifiers_training/annotations/masks/'
+    mask_dir: str = '/shared/nas2/blume5/fa24/concept_downloading/data/image_annotations/24-11-18/annotations/merged_annotations/masks/'
 
     @classmethod
     def from_dict(cls, config_dict: dict) -> 'TrainingConfig':

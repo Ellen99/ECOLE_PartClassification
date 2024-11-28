@@ -5,7 +5,7 @@ feat_dim: 1024
 image_height: 224
 image_width: 224
 
-input_dir: 'data/test_images/'
+input_dir: 'data/all_test_images/'
 output_dir: 'output/'
 threshold: 0.95
 
