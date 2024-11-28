@@ -1,4 +1,5 @@
-boats has 42 concepts
+Concept name,Parts
+boats has 42 concepts,
 polar research vessel,"helideck, satellite navigation and communications, hull, crane, bridge"
 banana boat,"inflation valve, towing ring, hull, handle, seating tube"
 shell (crew boat),"cabin, bow, oar, deck, hull"
@@ -42,7 +43,7 @@ cabin cruiser,"hatch, swim platform, helm station"
 missile,"fins, launcher, warhead"
 ferry,"lifeboat, car deck"
 ,
-office supplies has 74 concepts
+office supplies has 74 concepts,
 staple remover,"handle, tongue, jaw"
 stapler,"hinge, base, handle, anvil, staple ejector, staple channel"
 steno pads,"margin line, cover, spiral binding, lined pages"
@@ -118,7 +119,7 @@ eraser,rubber surface
 bookmarks,"tassel, clip"
 sticky notes,"adhesive strip, note surface"
 ,
-kitchen has 80 concepts
+kitchen has 80 concepts,
 saucer,"rim, base, glazing, well, foot ring"
 bottle opener,"cap lifter, lever arm, handle"
 microwave,"control panel, door handle, timer display, door release button, turntable, door"
@@ -200,7 +201,7 @@ pepper mill,"top knob, body, base"
 refrigerator,"body, door, handles"
 cheese grater,"base, handle, grating surface"
 ,
-helicopter has 24 concepts
+helicopter has 24 concepts,
 medevac,"medical bay, skids, rotor blade, tail boom, cargo door"
 fuselage,"engine cowling, tail boom, cabin, nose cone, landing skid, stabilizer fin"
 training,"rotor blades, landing skids, control stick, tail boom, control panel, yaw string"
@@ -226,7 +227,7 @@ special ops,"tail rotor, winch, armored fuselage, rotor blade"
 oil & gas support,"cargo hook, winch, tail rotor"
 offshore,"rotor blades, landing gear"
 ,
-tools has 71 concepts
+tools has 71 concepts,
 scroll saw,"arm, table, blade, dust port"
 pyrography tool,"woodburning tip, handle, temperature knob, power cord"
 belt sander,"dust bag, abrasive belt, handle, drum"
@@ -299,7 +300,7 @@ allen wrench,"long arm, short arm"
 lug wrench,"pivot, crossbar, socket, handle"
 sandpaper,abrasive surface
 ,
-geography has 71 concepts
+geography has 71 concepts,
 field,"fence, plant row, irrigation pipe, water trough, water tower, scarecrow"
 city street,"streetlight, bike lane, curb, sidewalk, crosswalk"
 road,"sidewalk, signage, shoulder, crosswalk, pavement, median, guardrail, bike lane"
@@ -372,7 +373,7 @@ sidewalk,"drain cover, street tree, pavement"
 butte,"isolated hill, steep sides, flat top"
 clay,"erosion, soil"
 ,
-garden has 52 concepts
+garden has 52 concepts,
 machete,"handle, blade, tip"
 scythe,"ferrule, handle, grip, blade"
 watering can,"rose, handle, spout, container"
@@ -426,7 +427,7 @@ manual reel mower,"reel cutting blade, height adjustment lever, wheel, push hand
 auger,"handle, blade"
 hoe,"blade, hinge joint, handle"
 ,
-vehicles has 47 concepts
+vehicles has 47 concepts,
 moving van,"cabin, tires, mirrors, cargo area, side door, tailgate"
 trike cycle,"seat, wheel, pedal, handlebar, frame"
 armoured truck,"turret mount, bulletproof glass, armored body panels, tires, reinforced doors"
@@ -475,7 +476,7 @@ refrigerator,condenser
 tractor,"steering wheel, cabin, tires, bucket"
 tankers,"outlet valve, ladder"
 ,
-weapons has 26 concepts
+weapons has 26 concepts,
 boomerang,"trailing edge, leading edge"
 bow and arrow,"riser, arrowhead, nock, bowstring, fletching"
 quarterstaff,"grip, shaft, tip, end cap"
@@ -503,7 +504,7 @@ sling,"strap, cradle"
 spear,"spearhead, shaft"
 machine gun,"muzzle, trigger, bolt, stock, barrel"
 ,
-drones has 14 concepts
+drones has 14 concepts,
 amphibious,"waterproof body, landing gear, rotor, frame"
 surveillance and reconnaissance,"tail boom, rotor blades, landing gear, trim tabs, fuselage, infrared sensor, camera, vertical fin, wing, gps antenna"
 agricultural,"camera, landing gear, frame, spray nozzles, rotor, led lights"
@@ -519,7 +520,7 @@ police,"camera, landing gear, led lights, frame, rotor, police markings"
 recreational,"battery, camera, frame, landing gear, rotor, remote controller"
 inspection,"cameras, landing gear"
 ,
-ships has 15 concepts
+ships has 15 concepts,
 submarine,"deck, bridge, periscope, hull, propeller, conning tower"
 battle cruiser,"hull, turret, funnels, radar mast, bow"
 cruiser,"bridge, deck, turret, hull"
@@ -536,7 +537,7 @@ ocean liner,"bow, stern, funnels, hull"
 oil tanker,"anchor, deck, bridge, stern, hull"
 coastal defense,"turret, radar system, communications mast"
 ,
-geometry has 8 concepts
+geometry has 8 concepts,
 parallel lines,"parallel line 2, parallel line 1"
 intersecting lines,"line 2, intersection point, line 1"
 ray,vertex
@@ -546,7 +547,7 @@ cone,circular base
 cylinder,"circular bottom, circular top"
 circular sector,"radius, arc"
 ,
-airplanes has 15 concepts
+airplanes has 15 concepts,
 attack,"bomb, bomb racks, propulsion component, wings"
 fighters,"tail fin, afterburner, propulsion component, wings"
 fire fighter,"wings, propulsion component, fire retardant"
