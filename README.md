@@ -18,7 +18,7 @@ A hierarchical part classification system using DINOv2 features for semantic par
 
 This project implements a part classification system using DINOv2 (self-DIstillation with NO labels) features. It trains logistic regression classifiers for different parts of concepts using a hierarchical approach, with support for parallel processing and checkpointing.
 
-Refer to [part hierarchy file here!](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/Concept_hierarchy-Nov27.csv)
+Refer to [concept hierarchy file here!](https://github.com/Ellen99/ECOLE_PartClassification/blob/main/Concept_hierarchy-Nov27.csv)
 
 ## ✨ Features
 
