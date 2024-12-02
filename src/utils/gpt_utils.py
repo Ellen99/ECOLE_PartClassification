@@ -1,5 +1,4 @@
 from openai import OpenAI
-from secret import KEY
 
 def filter_relevant_parts_through_api(query_parts_string, new_concept, client):
     # new_concept = "awl tool"
@@ -27,6 +26,8 @@ def filter_relevant_parts_through_api(query_parts_string, new_concept, client):
 # implement main function to test the function
 def main():
     ''' Main function to test the function '''
+    from secret import KEY
+
     client = OpenAI(api_key=KEY)
     parts_to_consider = ['head', 'screwdriver', 'long arm', 'spring', 'handle', 'blade', 'point', 'grip', 'shaft', 'chisel']
     parts_to_consider = ', '.join([s.replace("'", "") for s in parts_to_consider])
