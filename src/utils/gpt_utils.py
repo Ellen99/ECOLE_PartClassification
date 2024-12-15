@@ -1,11 +1,17 @@
 from openai import OpenAI
-
-def filter_relevant_parts_through_api(query_parts_string, new_concept, client):
+FULL_NAME_STR = '''
+'For each part, please provide your answer in this format:
+[category]--[item]--part:[part name]
+For example: tools--screwdriver--part:handle
+Use only the categories, items, and parts from the provided list above.'
+'''
+def filter_relevant_parts_through_api(query_parts_string, new_concept, client, full_names=False):
     # new_concept = "awl tool"
     prompt_to_gpt = f"Which of the following parts are essential for identifying an {new_concept} specifically?\
  Focus on parts that are visually distinctive and most critical to the {new_concept}'s function. Only select the parts that you would use to describe the {new_concept}.\
  If multiple parts seem similar, select the one most specific to most instances of {new_concept} concept. Provide only those for which you are more than 90% sure.\
  Provide the output only as a comma-separated list of those critical less than 8 parts.\n\
+ {FULL_NAME_STR if full_names else ''}\n\
     Parts: {{{query_parts_string}}}"
 
     print("Prompt to GPT: ", prompt_to_gpt)
